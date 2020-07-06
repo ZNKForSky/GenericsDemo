@@ -1,4 +1,4 @@
-package com.luffy.genericsdemo0x;
+package com.luffy.genericsdemo07;
 
 public class XiaoMing<T> extends Person {
 

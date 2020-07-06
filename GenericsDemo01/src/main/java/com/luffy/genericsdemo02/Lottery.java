@@ -6,10 +6,10 @@ import java.util.Random;
 /**
  * 作者：<a href="https://blog.csdn.net/qq_35101450">张宁科CSDN主页</a><p>
  * 创建时间：2020/6/24 04:30 <p>
- * 描述：抽奖器
+ * 描述：通用类型的抽奖器
  */
 public class Lottery<T> {
-    private Random random = new Random();
+    private static Random random = new Random();
     /**
      * 奖品池
      */
@@ -44,7 +44,7 @@ public class Lottery<T> {
      * @param <T> 未知类型的奖品
      * @return 具体的奖品
      */
-    public <T> T getPrize(ArrayList<T> list){
+    public static <T> T getPrize(ArrayList<T> list){
         return list.get(random.nextInt(list.size()));
     }
 

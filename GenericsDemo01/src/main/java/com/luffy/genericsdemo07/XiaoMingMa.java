@@ -1,4 +1,4 @@
-package com.luffy.genericsdemo0x;
+package com.luffy.genericsdemo07;
 
 import java.lang.reflect.Method;
 import java.util.List;

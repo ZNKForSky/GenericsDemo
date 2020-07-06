@@ -1,11 +1,13 @@
-package com.luffy.genericsdemo0x;
+package com.luffy.genericsdemo07;
 
 public class Test {
 
     public static void main(String[] args) {
 
 //        scene01();
-        scene02();
+//        scene02();
+//        scene03();
+        scene04();
 
     }
 
@@ -45,7 +47,7 @@ public class Test {
 
     }
 
-    public static void scene03(){
+    public static void scene03() {
         int[] ints = new int[10];
         sort(ints);
         double[] doubles = new double[10];
@@ -53,22 +55,61 @@ public class Test {
         Object[] objects = new Object[10];
         sort(objects);
     }
-    private static void sort(int[] array){}
-    private static void sort(double[] array){}
-    private static <T> void sort(T[] array){}
+
+    private static void sort(int[] array) {
+    }
+
+    private static void sort(double[] array) {
+    }
+
+    private static <T> void sort(T[] array) {
+    }
+
+    public static void scene04() {
+        NaturalNumber<Integer> integerNaturalNumber = new NaturalNumber<>(100);
+        integerNaturalNumber.isEven();
+        System.out.println("integerNaturalNumber.isEven() === " + integerNaturalNumber.isEven());
+    }
+}
+
+class NaturalNumber<T extends Integer> {
+    private T t;
+
+    public NaturalNumber(T t) {
+        this.t = t;
+    }
+
+    /**
+     * 判断是否是偶数
+     *
+     * @return true表示是偶数
+     */
+    public boolean isEven() {
+        return t.intValue() % 2 == 0;
+    }
 }
 
 class Test1 {
 
-    static class A{}
-    static class A1{}
-    static interface B{}
-    static interface C{}
+    static class A {
+    }
 
-//        static class D<T extends B & A &C>{}//编译报错
+    static class A1 {
+    }
+
+    static interface B {
+    }
+
+    static interface C {
+    }
+
+    //static class D<T extends B & A &C>{}//编译报错
     //具有多个限定的类型变量是范围中列出的所有类型的子类型。如果范围之一是类，则必须首先指定它
-    static class D1<T extends A & B & C>{}//OK
+    static class D1<T extends A & B & C> {
+    }//OK
 
     //单继承
 //    static class D2<T extends  A & A1 & B & C>{}
 }
+
+

@@ -3,7 +3,7 @@ package com.luffy.genericsdemo03;
 /**
  * 作者：<a href="https://blog.csdn.net/qq_35101450">张宁科CSDN主页</a><p>
  * 创建时间：2020/6/24 05:10 <p>
- * 描述：
+ * 描述：泛型类测试
  */
 public class Main {
 

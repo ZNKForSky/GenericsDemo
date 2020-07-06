@@ -1,4 +1,4 @@
-package com.luffy.genericsdemo0x;
+package com.luffy.genericsdemo07;
 
 /**
  * 作者：<a href="https://blog.csdn.net/qq_35101450">张宁科CSDN主页</a><p>

@@ -1,9 +1,11 @@
-package com.luffy.genericsdemo0x;
+package com.luffy.genericsdemo06;
 
-/**
- * 香蕉
- */
+
 public class Banana extends Fruit {
+
+    public Banana(){
+        price = 10;
+    }
 
     @Override
     public String toString() {
